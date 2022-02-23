@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOT Training</title>
+    <!-- to display the font earlier -->
+    <link rel="preload" as="font">
+    <!-- website icon -->
+    <link rel="icon" href="/images/NasaSpaceApps.webp">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="/scss/main.css">
+</head>
+<body>
+    <!-- start logo -->
+    <header class="images">
+        <img src="/images/logo.webp" alt="nasa space apps logo" class="nasa">
+        <img src="/images/oi-hub.webp" alt="oi hub logo" class="oi-hub">
+        <img src="/images/enactus.webp" alt="enactus logo" class="enactus">
+    </header>
+    <!-- end logo -->
+    <!-- start main -->
+    <section class="main">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 swiper">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/images/logoend.webp" alt="logoend" class="logoend">
+                            <div class="carousel-caption first-para d-md-block">
+                              <h1 class="ml14">
+                                <span class="text-wrapper">
+                                  <span class="letters">TOT Training (Certified by UNICEF)</span>
+                                  <span class="line"></span>
+                                </span>
+                              </h1>
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa possimus quidem repudiandae amet error sequi ea atque voluptatibus minus similique labore libero ipsam ab, sapiente aliquam, nemo ad aliquid deserunt.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/images/unicef.webp" alt="unicef" class="unicef">
+                            <div class="carousel-caption second-para d-md-block">
+                                <h1 class="ml14">
+                                    <span class="text-wrapper">
+                                      <span class="letters">Follow Us:</span>
+                                      <span class="line"></span>
+                                    </span>
+                                  </h1>
+                              <ul>
+                                  <li>Nasa Space Apps Account: <a href="https://www.facebook.com/spaceappsbenha" target="_blank">Nasa Space Apps</a></li>
+                                  <li>Horizons Account: <a href="https://www.facebook.com/horizonstop" target="_blank">Horizons</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-lg-6 col-md-6 form">
+                    <form id="msform" action="" method="post">
+                        <!-- progressbar -->
+                        <ul id="progressbar">
+                            <li class="active" id="account"><strong>Account</strong></li>
+                            <li id="personal"><strong>Personal</strong></li>
+                            <li id="payment"><strong>Personal</strong></li>
+                            <li id="confirm"><strong>Finish</strong></li>
+                        </ul>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div> 
+                        <br> 
+                        <!-- fieldsets -->
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="titles">
+                                    <h2 class="fs-title">Account Information:</h2>
+                                    <h2 class="steps">Step 1 - 4</h2>
+                                </div>
+                                <label class="fieldlabels">Username: <span class="star">*</span></label> 
+                                <input type="text" name="name" id="name" placeholder="User Name" required title="Please Enter Your Name"/> 
+                                <label class="fieldlabels">Email: <span class="star">*</span></label> 
+                                <input type="email" name="email" id="email" placeholder="Email" required title="Please Enter Your Email"/> 
+                                <label class="fieldlabels">Phone: <span class="star">*</span></label> 
+                                <input type="tel" name="phone" id="phone" placeholder="Phone" minlength="4" maxlength="11" /> 
+                            </div> 
+                            <input type="button" name="next" class="next action-button" value="Next" />
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="titles">
+                                    <h2 class="fs-title">Personal Information:</h2>
+                                    <h2 class="steps">Step 2 - 4</h2>
+                                </div> 
+                                <label for="gender"class="fieldlabels">Gender: <span class="star">*</span></label>
+                                <input list="genders" name="gender" id="gender">
+                                <datalist id="genders">
+                                    <option value="Male"></option>
+                                    <option value="Female"></option>
+                                </datalist>
+                                <label class="fieldlabels">Governorate: <span class="star">*</span></label> 
+                                <input type="text" name="gov" id="gov" placeholder="Governorate" required title="Please Enter Your Governorate"/> 
+                                <label class="fieldlabels">Department: <span class="star">*</span></label> 
+                                <input type="text" name="dep" id="dep" placeholder="Department" required title="Please Enter Your Department"/> 
+                            </div> 
+                            <input type="button" name="next" class="next action-button" value="Next" /> 
+                            <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="titles">
+                                    <h2 class="fs-title">Personal Information:</h2>
+                                    <h2 class="steps">Step 3 - 4</h2>
+                                </div>
+                                <label class="fieldlabels">Grade</label> 
+                                <input type="text" name="grade" id="grade" placeholder="Grade" />  
+                                <label class="fieldlabels">National ID Number:</label> 
+                                <input type="number" name="nid" id="nid" placeholder="National ID Number" inputmode="tel" minlength="1" maxlength="14" required title="Please Enter Your National ID Number"/>
+                                <label class="fieldlabels">Date of Birth</label> 
+                                <input type="date" name="dob" id="dob" placeholder="Date of Birth" />  
+                            </div> 
+                            <input type="submit" name="next" class="next action-button" id="btn" value="Submit" /> 
+                            <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="titles">
+                                    <h2 class="fs-title">Finish:</h2>
+                                    <h2 class="steps">Step 4 - 4</h2>
+                                </div>
+                                <br><br>
+                                <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                                <div class="row justify-content-center" style="text-align: center;">
+                                    <div class="col-3"> 
+                                        <i class="far fa-check-circle" class="fit-image"></i>
+                                     </div>
+                                </div> <br><br>
+                                <div class="row justify-content-center">
+                                    <div class="col-7 text-center">
+                                        <h5 class="purple-text text-center">Thank You</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end main -->
+    <!-- start loader -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+    </div>
+    <!-- end loader -->
+    <!-- start js -->
+    <!-- anime -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- main js -->
+    <script src="/js/main.js"></script>
+    <!-- end js -->
+</body>
+</html>

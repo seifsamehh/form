@@ -1,0 +1,306 @@
+// start main variables
+$color-red: #ee283f;
+$color-red-two: #cd2b40;
+$color-yellow: #eafe07;
+$color-blue-one: #0960e1;
+$color-blue-two: #0945a7;
+$color-blue-three: #0f1d4e;
+$color-blue-four: #0f173c;
+$color-white: #fff;
+$color-black: #000;
+$xs-screen: 375px;
+$sm-screen: 576px;
+$md-screen: 768px;
+$lg-screen: 992px;
+$xl-screen: 1200px;
+$xxl-screen: 1400px;
+// end main variables
+// start global components
+::selection {
+  background-color: $color-red;
+  color: $color-white;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: $color-white;
+}
+::-webkit-scrollbar-thumb {
+  background: $color-blue-one;
+  &:hover {
+    background: $color-blue-two;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url(/images/bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+  @media (min-width: 280px) and (max-width: 299px) {
+    background-image: url(/images/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 170vh;
+    overflow-y: scroll;
+  }
+  @media (min-width: 300px) and (max-width: 574px) {
+    background-image: url(/images/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 170vh;
+    overflow-y: scroll;
+  }
+  @media (min-width: $xs-screen) and (max-width: $sm-screen) {
+    background-image: url(/images/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 165vh;
+    overflow-y: scroll;
+  }
+  @media (min-width: 577px) and (max-width: 767px) {
+    background-image: url(/images/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 185vh;
+    overflow-y: scroll;
+  }
+  @media (min-width: 759px) and (max-width: $md-screen) {
+    background-image: url(/images/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 185vh;
+    overflow-y: scroll;
+  }
+  @media (min-width: 768px) and (max-width: $lg-screen) {
+    background-image: url(/images/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 105vh;
+    overflow-y: hidden;
+  }
+  @media (min-width: 993px) and (max-width: $xl-screen) {
+    background-image: url(/images/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    overflow-y: hidden;
+  }
+}
+// start barlow
+@font-face {
+  font-family: "Barlow";
+  src: url(/Fonts/Barlow/Barlow-Black.ttf) format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url(/Fonts/Barlow/Barlow-Bold.ttf) format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url(/Fonts/Barlow/Barlow-ExtraBold.ttf) format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url(/Fonts/Barlow/Barlow-ExtraLight.ttf) format("truetype");
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url(/Fonts/Barlow/Barlow-Light.ttf) format("truetype");
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url(/Fonts/Barlow/Barlow-Medium.ttf) format("truetype");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url(/Fonts/Barlow/Barlow-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+// end barlow
+// start titillium
+@font-face {
+  font-family: "titillium";
+  src: url(/Fonts/Titillium_Web/TitilliumWeb-Black.ttf) format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "titillium";
+  src: url(/Fonts/Titillium_Web/TitilliumWeb-Bold.ttf) format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "titillium";
+  src: url(/Fonts/Titillium_Web/TitilliumWeb-ExtraLight.ttf) format("truetype");
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: "titillium";
+  src: url(/Fonts/Titillium_Web/TitilliumWeb-Light.ttf) format("truetype");
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: "titillium";
+  src: url(/Fonts/Titillium_Web/TitilliumWeb-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "titillium";
+  src: url(/Fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf) format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+// end titillium
+img {
+  user-select: none;
+}
+// start loader
+.loader-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $color-blue-three;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  --loader-color: #0960e1;
+  --loader-shadow-color: #0960e1;
+  --loader-part-size: 24px;
+  --loader-size: calc(var(--loader-part-size) * 3);
+  position: relative;
+  width: var(--loader-size);
+  height: var(--loader-size);
+  &.hidden {
+    display: none;
+  }
+  span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--loader-part-size);
+    height: var(--loader-part-size);
+    background-color: var(--loader-color);
+    box-shadow: 0 0 6px var(--loader-shadow-color);
+    transform-origin: center center;
+    animation: main 6s ease infinite, fading 6s ease infinite;
+    &:nth-child(1) {
+      --translationValue: calc(var(--loader-part-size) / 4),
+        calc(var(--loader-part-size) / 4);
+      --translationValueWhenAssebled: var(--loader-part-size), 0px;
+      --translationBeforeDisassembling: calc(var(--loader-part-size) / 4),
+        calc(var(--loader-part-size) / 4 * -1);
+      top: 0;
+      left: var(--loader-part-size);
+      animation-delay: 0s, 0.2s;
+    }
+    &:nth-child(2) {
+      --translationValue: calc(var(--loader-part-size) / 4),
+        calc(var(--loader-part-size) / 4 * -1);
+      --translationValueWhenAssebled: 0px, calc(var(--loader-part-size) * -1);
+      --translationBeforeDisassembling: calc(var(--loader-part-size) / 4 * -1),
+        calc(var(--loader-part-size) / 4 * -1);
+      top: var(--loader-part-size);
+      left: 0;
+    }
+    &:nth-child(3) {
+      --translationValue: calc(var(--loader-part-size) / 4 * -1),
+        calc(var(--loader-part-size) / 4);
+      --translationValueWhenAssebled: 0px, var(--loader-part-size);
+      --translationBeforeDisassembling: calc(var(--loader-part-size) / 4),
+        calc(var(--loader-part-size) / 4);
+      top: var(--loader-part-size);
+      right: 0;
+      animation-delay: 0s, 0.4s;
+    }
+    &:nth-child(4) {
+      --translationValue: calc(var(--loader-part-size) / 4 * -1),
+        calc(var(--loader-part-size) / 4 * -1);
+      --translationValueWhenAssebled: calc(var(--loader-part-size) * -1), 0px;
+      --translationBeforeDisassembling: calc(var(--loader-part-size) / 4 * -1),
+        calc(var(--loader-part-size) / 4);
+      bottom: 0;
+      left: var(--loader-part-size);
+      animation-delay: 0s, 0.6s;
+    }
+  }
+}
+@keyframes fading {
+  0% {
+    opacity: 1;
+  }
+  8% {
+    opacity: 0.2;
+  }
+  16.6%,
+  33.2% {
+    opacity: 1;
+  }
+  41.6% {
+    opacity: 0.2;
+  }
+  50%,
+  66.6% {
+    opacity: 1;
+  }
+  74.9% {
+    opacity: 0.2;
+  }
+  83.2%,
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes main {
+  0%,
+  25% {
+    transform: rotate(0) translate(0, 0);
+  }
+  33.3%,
+  58.3% {
+    transform: rotate(45deg) translate(var(--translationValue));
+  }
+  62.45% {
+    transform: rotate(90deg) translate(var(--translationValueWhenAssebled));
+  }
+  66.6%,
+  91.6% {
+    transform: rotate(135deg) translate(var(--translationBeforeDisassembling));
+  }
+  100% {
+    transform: rotate(180deg) translate(0, 0);
+  }
+}
+// end loader
+// end global components
